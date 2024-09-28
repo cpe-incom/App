@@ -4,40 +4,39 @@ body {
     padding: 0;
 }
 
-h1 {
+header {
     text-align: center;
 }
 
-form {
-    margin-bottom: 20px;
+h1 {
+    font-size: 24px;
 }
 
-input {
-    display: block;
+.exercise {
+    margin-top: 20px;
+}
+
+.set-row {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    padding: 8px;
-    width: 100%;
-    max-width: 300px;
 }
 
-button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+input.input-number {
+    width: 50px; /* Reduced size for 3-digit input */
+    margin-right: 10px;
+    padding: 2px;
+    text-align: center;
+}
+
+input.set-complete {
+    margin-left: 10px;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-#workoutHistory {
-    list-style-type: none;
-    padding: 0;
-}
-
-#workoutHistory li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
 }

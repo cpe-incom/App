@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Tracker</title>
+    <title>Workout Tracker - Minimalistic</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Workout Tracker</h1>
+    <header>
+        <h1>Monday's Session</h1>
+    </header>
 
-    <!-- Form to input workout data -->
-    <form id="workoutForm">
-        <label for="exercise">Exercise:</label>
-        <input type="text" id="exercise" required>
+    <section id="workoutOverview">
+        <div class="exercise">
+            <h2><strong>Bench Press</strong></h2>
 
-        <label for="sets">Sets:</label>
-        <input type="number" id="sets" required>
+            <div class="set-row">
+                <input type="text" class="input-number" placeholder="Kg" maxlength="3">
+                <input type="text" class="input-number" placeholder="Reps" maxlength="3">
+                <input type="checkbox" class="set-complete">
+            </div>
 
-        <label for="reps">Reps:</label>
-        <input type="number" id="reps" required>
+            <div class="set-row">
+                <input type="text" class="input-number" placeholder="Kg" maxlength="3">
+                <input type="text" class="input-number" placeholder="Reps" maxlength="3">
+                <input type="checkbox" class="set-complete">
+            </div>
 
-        <label for="weight">Weight:</label>
-        <input type="number" id="weight">
+            <div class="set-row">
+                <input type="text" class="input-number" placeholder="Kg" maxlength="3">
+                <input type="text" class="input-number" placeholder="Reps" maxlength="3">
+                <input type="checkbox" class="set-complete">
+            </div>
 
-        <button type="submit">Save Workout</button>
-    </form>
-
-    <h2>Workout History</h2>
-    <ul id="workoutHistory"></ul>
+            <button id="addSetBtn">+ Add Set</button>
+        </div>
+    </section>
 
     <script src="app.js"></script>
 </body>
