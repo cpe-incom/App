@@ -40,3 +40,10 @@ button {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+.save-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
